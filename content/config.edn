@@ -1,0 +1,34 @@
+{:site-title           "DandyOps.com"
+ :author               "Anik Chowdhury"
+ :description          "DevOps mastery"
+ :site-url             "https://dandyops.com"
+ :post-root            "posts"
+ :page-root            "pages"
+ :post-root-uri        "posts"
+ :page-root-uri        "pages"
+ :tag-root-uri         "tags"
+ :author-root-uri      "authors"
+ :public-dest          "public"
+ :blog-prefix          ""
+ :rss-name             "feed.xml"
+ :rss-filters          ["cryogen"]
+ :recent-posts         3
+ :post-date-format     "yyyy-MM-dd"
+ :archive-group-format "yyyy MMMM"
+ :sass-src             []
+ :sass-path            "sass"
+ :compass-path         "compass"
+ :theme                "dandyops"
+ :resources            ["img"]
+ :keep-files           [".git"]
+ :disqus?              true
+ :disqus-shortname     "dandyops-com"
+ :ignored-files        [#"\.#.*" #".*\.swp$"]
+ :previews?            false
+ :posts-per-page       5
+ :blocks-per-preview   2
+ :clean-urls          :trailing-slash
+ :collapse-subdirs?    false
+ :hide-future-posts?   true
+ :klipse               {}
+ :debug?               true}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>DandyOps DevOps Consulting Services</title>
+    <link rel="icon" href="icons/favicon.png" type="image/png" sizes="16x16">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="DandyOps DevOps Consulting Services">
+    <meta name="keywords" content="DevOps, aws, gcp, docker, ansible, kubernate, Terraform, ibm, azure">
+    <!--<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700" rel="stylesheet">
+    <!--<link rel="stylesheet" href="assets/css/animate.css">  Resource style -->
+    <!--
+        <link rel="stylesheet" href="assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.css">-->
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+
+    <!-- Resource style -->
+    <!--<link href="assets/css/style.css" rel="stylesheet" type="text/css" media="all"/> -->
+    {% style "css/style.css" %}
+    {% style "css/bootstrap.min.css" %}
+    {% style "css/animate.css" %}
+    {% style "css/owl.carousel.css" %}
+    {% style "css/owl.theme.css" %}
+</head>
+
+<body>
+
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+        <div class="container container-s">
+            <a class="navbar-brand" href="#">DandyOps</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto navbar-right">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/#products">Services</a></li>
+                    <!--<li class="nav-item"><a class="nav-link js-scroll-trigger" href="http://localhost:8080/blog/index.html">Blog</a></li>-->
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{archives-uri}}">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/#reviews">Reviews</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/#pricing">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/#contact_us">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav><!-- Navbar End -->
+
+    <div id="container" class="content-container">
+        <div id="main" class="main">
+
+            {% block content %}
+            {% endblock %}
+
+            <script type="text/javascript">
+            var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq || 
+            {widgetcode:"025c0f2af505745f9c4eeb632b17183efac6dfb61ee6d79b9342792e5b53fcf7", values:{},ready:function(){}};
+            var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;
+            s.src="https://salesiq.zoho.com/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);d.write("<div id='zsiqwidget'></div>");
+            </script>
+
+        </div> <!-- Main -->
+    </div>
+
+<!-- Array Footer Section -->
+
+<div class="footer">
+    <h6>&copy;2019 DandyOps LLC. All rights reserved</h6>
+</div>
+
+
+
+<!-- Scroll To Top
+ <div id="back-top" class="bk-top">
+   <div class="bk-top-txt">
+       <a class="back-to-top js-scroll-trigger" href="#main">Chat</a>
+
+   </div>
+ </div>
+Scroll To Top Ends-->
+
+
+<!-- Jquery and Js Plugins -->
+{% script "js/jquery-2.1.1.js" %}
+{% script "js/popper.min.js" %}
+{% script "js/bootstrap.min.js" %}
+{% script "js/jquery.validate.min.js" %}
+{% script "js/plugins.js" %}
+{% script "js/custom.js" %}
+{% script "js/highlight.pack.js" %}
+
+{% if post.klipse %} {{post.klipse|safe}} {% endif %}
+{% if page.klipse %} {{page.klipse|safe}} {% endif %}
+
+</body>
+</html>
